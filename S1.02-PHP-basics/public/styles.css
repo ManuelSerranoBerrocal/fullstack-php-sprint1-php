@@ -1,4 +1,4 @@
-/* Estilo simple, profesional y con feedback visual */
+
 * {
     margin: 0;
     padding: 0;
@@ -82,13 +82,13 @@ strong {
 ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* ¡Añadido! */
+    margin: 0; 
 }
 
 li {
-    padding: 4px 0; /* Menos espacio */
-    margin: 0;       /* ¡Añadido! */
-    line-height: 1.3; /* Altura de línea ajustada */
+    padding: 4px 0; 
+    margin: 0;   
+    line-height: 1.3;
 }
 
 a {

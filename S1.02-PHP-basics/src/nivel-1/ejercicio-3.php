@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+        <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
         Ejercicio 3
@@ -48,7 +49,6 @@
         echo "<p>Suma total: " . ($x + $y + $n + $m) . "</p>";
         echo "<p>Producto total: " . ($x * $y * $n * $m) . "</p>";
 
-        // b) Función para operaciones aritméticas con excepciones
         function arithmeticOperation(float $num1, float $num2, string $operation): float {
             $op = strtolower(trim($operation));
 
@@ -69,7 +69,6 @@
             }
         }
 
-        // Ejemplos de uso dentro de try/catch
         echo "<h3>Ejemplos de la función:</h3>";
         try {
             echo "<p>suma(8, 4) = " . arithmeticOperation(8, 4, 'suma') . "</p>";

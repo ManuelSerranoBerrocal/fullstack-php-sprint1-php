@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+        <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
         Imprimir por pantalla "Hello, World!" utilizando una variable. Después:

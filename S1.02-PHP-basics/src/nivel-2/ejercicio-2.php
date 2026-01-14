@@ -7,7 +7,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Enlace para volver al menú principal -->
         <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
@@ -35,7 +34,6 @@
         }
 
         function analyzeScores($score1, $score2, $score3) {
-            // Validación simple: cada puntuación debe estar entre 0 y 9999
             $scores = [$score1, $score2, $score3];
             foreach ($scores as $score) {
                 if ($score < 0 || $score > 9999) {
@@ -44,21 +42,17 @@
                 }
             }
 
-            // Calcular suma y media
-            $sum = $score1 + $score2 + $score3;
-            $average = number_format($sum / 3, 2); // 2 decimales
+            $total = $score1 + $score2 + $score3;
+            $average = number_format($total / 3, 2); 
 
-            // Obtener nivel usando la otra función
-            $level = getPlayerLevel($sum);
+            $level = getPlayerLevel($total);
 
-            // Mostrar resultados en pantalla
             echo "<p>Puntuaciones: $score1, $score2, $score3</p>";
-            echo "<p>Suma: $sum</p>";
+            echo "<p>Suma: $total</p>";
             echo "<p>Media: $average</p>";
             echo "<p>Clasificación: $level</p>";
         }
 
-        // Pruebas del sistema
         echo "<h2>Ejercicio 2 - Clasificación de jugador</h2>";
         analyzeScores(1000, 1500, 2000); 
         analyzeScores(3000, 2500, 3500); 

@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+        <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
         Escribe una función que verifique el grado de un estudiante según su nota (%).
@@ -17,18 +18,16 @@
         - Menos de 33% --> Reprobado
         */
 
-        // Definimos constantes para los límites (mejora de mantenibilidad)
         define('PRIMERA_DIVISION', 60);
         define('SEGUNDA_DIVISION', 45);
         define('TERCERA_DIVISION', 33);
 
         function obtenerGrado($nota) {
-            // Validamos que la nota esté en el rango correcto
             if ($nota < 0 || $nota > 100) {
                 return "Nota fuera de rango";
+                
             }
 
-            // Evaluación descendente usando constantes
             if ($nota >= PRIMERA_DIVISION) {
                 return "Primera División";
             }
@@ -42,13 +41,12 @@
             return "Reprobado";
         }
 
-        // Mostramos ejemplos en pantalla
         echo "<h2>Ejercicio 5 - Grado según nota</h2>";
         echo "<p>Nota 85 → " . obtenerGrado(85) . "</p>";
         echo "<p>Nota 50 → " . obtenerGrado(50) . "</p>";
         echo "<p>Nota 40 → " . obtenerGrado(40) . "</p>";
         echo "<p>Nota 20 → " . obtenerGrado(20) . "</p>";
-        echo "<p>Nota 151 → " . obtenerGrado(151) . "</p>";
+        echo "<p style='color:red;'>Nota 151 → " . obtenerGrado(151) . "</p>";
         ?>
     </div>
 </body>

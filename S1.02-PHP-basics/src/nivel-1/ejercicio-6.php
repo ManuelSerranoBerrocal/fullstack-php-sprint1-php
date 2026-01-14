@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+        <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
         Charlie me mordió el dedo! Charlie te morderá el dedo exactamente el 50% del tiempo.
@@ -22,7 +23,6 @@
         $result = isBitten();
         echo "<p>" . ($result ? "¡Sí! Charlie te mordió el dedo." : "No, esta vez escapaste.") . "</p>";
         
-        // Mostrar múltiples intentos para ver la aleatoriedad
         echo "<h3>Múltiples intentos:</h3>";
         for ($i = 1; $i <= 5; $i++) {
             $mordio = isBitten() ? "Mordió" : "No mordió";

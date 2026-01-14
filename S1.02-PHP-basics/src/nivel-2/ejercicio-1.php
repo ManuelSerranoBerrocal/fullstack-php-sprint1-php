@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+        <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
         Nivel 2 - Ejercicio 1
@@ -17,23 +18,18 @@
         */
 
         function calculateCallCost($minutes) {
-            // Validación simple: la duración no puede ser negativa
-            if ($minutes < 0) {
+           if ($minutes < 0) {
                 return "Error: duración no válida";
             }
             
-            // Si dura menos de 3 minutos, cuesta 10 céntimos
             if ($minutes < 3) {
                 return 10;
             }
             
-            // Calculamos los minutos extras (después de los primeros 3)
             $extraMinutes = $minutes - 3;
             
-            // Redondeamos hacia arriba: 3.1 → 1 minuto extra, 3.9 → 1, 4.0 → 1
             $extraMinutes = ceil($extraMinutes);
             
-            // Costo total: 10 céntimos base + 5 por cada minuto extra
             return 10 + ($extraMinutes * 5);
         }
 
@@ -43,7 +39,7 @@
         echo "<p>3 minutos → " . calculateCallCost(3) . " céntimos</p>";
         echo "<p>3.1 minutos → " . calculateCallCost(3.1) . " céntimos</p>";
         echo "<p>5 minutos → " . calculateCallCost(5) . " céntimos</p>";
-        echo "<p>Duración negativa → " . calculateCallCost(-5) . "</p>";
+        echo "<p style='color:red;'>Duración negativa → " . calculateCallCost(-5) . "</p>";
         ?>
     </div>
 </body>

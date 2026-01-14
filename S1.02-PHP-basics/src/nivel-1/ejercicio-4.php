@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="container">
+        <p><a href="../../public/index.html" style="color: #3182ce; font-weight: 600; text-decoration: none;">🔙 Volver al menú principal</a></p>
         <?php
         /*
         Ejercicio 4
@@ -18,23 +19,19 @@
         */
 
         function contarHasta($limite = 10, $paso = 1) {
-            // Validar que los parámetros sean positivos
             if ($limite <= 0 || $paso <= 0) {
                 echo "<p style='color:red;'>Error: límite y paso deben ser positivos.</p>";
                 return;
             }
             
-            // Mostramos el encabezado del conteo
             echo "<h3>Contando hasta $limite de $paso en $paso:</h3>";
             
-            // Realizamos el conteo desde 1
             for ($i = 1; $i <= $limite; $i += $paso) {
                 echo $i . ", "; 
             }
             echo "<br><br>"; 
         }
 
-        // Llamadas a la función con diferentes parámetros
         contarHasta();  
         contarHasta(20, 2);  
         contarHasta(15, 3); 
