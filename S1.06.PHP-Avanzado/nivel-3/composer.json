@@ -1,0 +1,15 @@
+{
+    "name": "manuel/s1.06-php-avanzado",
+    "description": "Ejercicios de PHP Avanzado - Full Stack PHP 2025-2026",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Manuel Enrique Serrano Berrocal"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

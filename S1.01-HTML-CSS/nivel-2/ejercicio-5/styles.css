@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bloque_header {
+    background-image: url("../../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fila_header {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social a {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.banner-semitransparente {
+    text-align: center;
+    color: #ff914d;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: -100px;
+}
+
+.banner-semitransparente p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.contenido-principal {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: black;
+}
+
+.articulos {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.articulo {
+    background: #556d86;
+    padding: 20px;
+}
+
+.articulo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.articulo h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.articulo p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ff914d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.columna-lateral {
+    flex: 1;
+    background: #e74c3c;
+    padding: 20px;
+}
+
+.bloque-lateral {
+    background: #f9e79f;
+    padding: 20px;
+}
+
+.bloque-lateral h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bloque-lateral p {
+    font-size: 15px;
+}
+
+.pie {
+    background: #f9e79f;
+    padding: 20px;
+    border: 20px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}

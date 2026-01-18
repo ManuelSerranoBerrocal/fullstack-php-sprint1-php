@@ -1,0 +1,149 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+ 
+/* CONTENEDOR */
+.contenedor {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* BLOQUE HEADER */
+.bloque_header {
+  background: black;
+  padding: 20px;
+}
+
+.fila_header {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #2c3e50;
+}
+
+.logo,
+.social {
+  flex: 1;
+  padding: 20px;
+  font-weight: bold;
+  background: #d96b6b;
+  font-size: 15px;
+      
+}
+ 
+.nav {
+  flex: 3;
+  padding: 20px;
+  font-weight: bold;
+  background: #d96b6b;
+  font-size: 15px;
+}
+
+/* SEPARADOR UNIVERSAL */
+.separador {
+  height: 20px;
+  background: black;
+}
+
+/* BANNER */
+.banner {
+  background: #ffd700;
+  padding: 20px;
+  border: 20px solid orange;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.espacio {
+    height: 20px;
+}
+/* MAIN */
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: black;
+}
+
+.izquierda {
+  flex: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #556d86;
+  padding: 15px;
+} 
+ 
+.article {
+  background: #2980b9;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navegacion {
+  grid-column: 1 / -1;
+  background: #3498db;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.derecha {
+  flex: 1;
+  background: #e74c3c;
+  padding: 20px;
+}
+
+.publicidad {
+  background: #f1c40f;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; /* ← Ajustado para reducir espacio excesivo */
+  font-size: 15px;
+} 
+
+/* Separador entre navegación y publicidad (solo en móvil/tableta) */
+.separador_negro {
+    display: none; /* Oculto en escritorio */
+}
+
+/* PIE */
+.pie {
+  background: #f9e79f;
+  padding: 20px;
+  border: 20px solid black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+  .fila_header {
+    flex-direction: column;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .separador {
+    display: block;
+  }
+}
+
+/* Móvil */
+
+@media (max-width: 480px) {
+
+  .izquierda {
+    grid-template-columns: 1fr;
+  }
+}
+

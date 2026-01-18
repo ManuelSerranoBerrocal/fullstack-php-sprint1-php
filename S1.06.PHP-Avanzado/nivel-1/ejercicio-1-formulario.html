@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- 
+    Nivel 1
+    Ejercicio 1
+    Crea un formulario HTML con los campos que quieras (al menos un nombre o nombre de usuario). 
+    El formulario debe tener como action un documento PHP. 
+    El código de dicho documento PHP deberá mostrar los valores de los distintos campos del formulario 
+    mediante variables superglobales. Además, guarda algunos de estos valores en variables de sesión.
+    -->
+    <meta charset="UTF-8">
+    <title>Formulario - Nivel 1 Ejercicio 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; background: #f9f9f9; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #0d6efd; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0b5ed7; }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action="ejercicio-1-procesar.php" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="pensamiento">Tu pensamiento del día:</label>
+            <input type="text" id="pensamiento" name="pensamiento">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

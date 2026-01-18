@@ -1,5 +1,31 @@
-*.zip
-*.pdf
-*.docx
-OLD_*
-_OLD_*
+# Composer - Dependencias
+/vendor/
+
+# Archivos de log y cache
+/app.log
+*.log
+cache/
+tmp/
+logs/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Configuraciones sensibles
+.env
+.env.local
+.env.php
+
+# Otros archivos generados
+*.bak
+*.old
+*.orig
