@@ -1,7 +1,8 @@
 # Composer - Dependencias
 /vendor/
+**/vendor/
 
-# Archivos de log y cache
+# Logs y cache
 /app.log
 *.log
 cache/
@@ -20,7 +21,7 @@ desktop.ini
 *.swo
 *.tmp
 
-# Configuraciones sensibles
+# Configuración sensible
 .env
 .env.local
 .env.php
