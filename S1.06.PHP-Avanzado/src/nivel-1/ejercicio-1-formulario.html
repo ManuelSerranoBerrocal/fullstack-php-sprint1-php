@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- 
+    Nivel 1 - Ejercicio 1 - Formulario HTML que envía datos a un script PHP mediante POST.
+    Crea un formulario HTML con los campos que quieras (al menos un nombre o nombre de usuario). 
+    El formulario debe tener como action un documento PHP. 
+    El código de dicho documento PHP deberá mostrar los valores de los distintos campos del formulario 
+    mediante variables superglobales. Además, guarda algunos de estos valores en variables de sesión.
+    -->
+    <meta charset="UTF-8">
+    <title>Formulario - Nivel 1 Ejercicio 1</title>
+    <link rel="stylesheet" href="../../public/styles.css">
+</head>
+<body>
+    <div class="container">
+        <p><a href="../../public/index.html">🔙 Volver al menú</a></p>
+        <h2>Nivel 1 - Ejercicio 1 - Formulario de Registro</h2>
+        <!-- El formulario envía los datos a ejercicio-1-procesar.php usando el método POST -->
+        <form action="ejercicio-1-procesar.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pensamiento">Tu pensamiento del día:</label>
+                <input type="text" id="pensamiento" name="pensamiento">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
