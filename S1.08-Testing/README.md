@@ -1,9 +1,38 @@
-Hola, soy Manuel Serrano Berrocal, y este es mi repositorio para la Tasca S1.08. Testing del Sprint 1 de Full Stack PHP.
+# Tasca S1.08. Testing – Full Stack PHP
 
-En este sprint he aprendido a escribir tests unitarios con PHPUnit, aplicar TDD (Test-Driven Development) y validar que mi código hace exactamente lo que debe, incluso en casos extremos.
+Hola, soy **Manuel Serrano Berrocal**.
 
-manue@Manel MINGW64 /c/xampp/htdocs/fullstack-php/S1.08-Testing (main)
-$ composer install
+En este sprint he aprendido a escribir **tests unitarios con PHPUnit**, aplicar la metodología **TDD (Test-Driven Development)** y validar que mi código se comporta exactamente como debe, incluso en casos extremos o con datos parciales.
+
+## Objetivo
+
+Desarrollar una biblioteca digital que permita gestionar libros con los siguientes atributos:
+- Título  
+- Autor/a  
+- ISBN  
+- Género (Aventuras, Ciencia-ficción, Cuento, Novela Policial, Paranormal, Distopía, Fantástico)  
+- Número de páginas  
+
+Y ofrecer funcionalidades para:
+- Añadir y eliminar libros  
+- Buscar por **título, autor, ISBN o género** (búsqueda parcial e insensible a mayúsculas)  
+- Obtener solo los **libros grandes** (>500 páginas)  
+
+Todos los libros utilizan **autores peruanos reales**, cumpliendo con el enfoque cultural del ejercicio.
+
+## Tecnologías utilizadas
+
+- **PHP 8+** con tipos estrictos (`declare(strict_types=1)`)
+- **PHPUnit** para testing unitario
+- **Composer** para gestión de dependencias
+- **TDD**: primero se escriben los tests, luego se implementa la funcionalidad
+
+## Cómo ejecutar
+
+1. Clona o descarga este repositorio.
+2. Instala las dependencias:
+   ```bash
+   composer install
 
 
 Luego:
@@ -14,6 +43,7 @@ PHPUnit 9.6.32 by Sebastian Bergmann and contributors.
 
 Library (Tests\Library)
  ✔ Add book
+ ✔ Find books by genre
  ✔ Remove book by isbn
  ✔ Find books by author
  ✔ Get large books
@@ -45,9 +75,34 @@ Speed Sensor (Tests\SpeedSensor)
  ✔ Obtener nivel velocidad with data set #10
  ✔ Velocidad negativa lanza excepcion
 
-Time: 00:00.022, Memory: 4.00 MB
+OK (28 tests, 39 assertions)
 
-OK (27 tests, 31 assertions)
+manue@Manel MINGW64 /c/xampp/htdocs/fullstack-php/S1.08-Testing (main)
+$
+
+
+
+
+
+Luego:
+
+manue@Manel MINGW64 /c/xampp/htdocs/fullstack-php/S1.08-Testing (main)
+$ ./vendor/bin/phpunit --testdox tests/LibraryTest.php
+PHPUnit 9.6.32 by Sebastian Bergmann and contributors.
+
+Library (Tests\Library)
+ ✔ Add book
+ ✔ Find books by genre
+ ✔ Remove book by isbn
+ ✔ Find books by author
+ ✔ Get large books
+ ✔ Find melgar books
+ ✔ Find books by partial title
+ ✔ Remove melgar book
+
+Time: 00:00.018, Memory: 4.00 MB
+
+OK (8 tests, 19 assertions)
 
 manue@Manel MINGW64 /c/xampp/htdocs/fullstack-php/S1.08-Testing (main)
 $
